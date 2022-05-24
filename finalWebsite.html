@@ -1,0 +1,258 @@
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="logo.png">
+        <link rel="stylesheet" href="https://use.typekit.net/tiv1dpi.css">
+
+        <title>Jai's Guide to Education Quality and Gender Equality</title>
+        <style>
+            #header {
+                height: 790.5px;
+                width: 101.3%;
+                background-color: #4484CE;
+                margin-top: -10px;
+                margin-left: -10px;
+            }
+
+            #girlatschool img {
+                margin-left: 750px;
+                margin-top: 3px;
+            }
+
+            #boyatschool img {
+                margin-left: 20px;
+                margin-top: -420px
+            }
+            
+            #titletext1 p1 {
+                font-family: 'Montserrat', sans-serif;
+                color: white;
+                font-size: 70px;
+                font-weight: 700;
+                margin-left: 80px;
+            }
+
+            #titletext2 p1 {
+                font-family: 'Montserrat', sans-serif;
+                color: white;
+                font-size: 70px;
+                font-weight: 700;
+                margin-left: 80px;
+                margin-bottom: 20px;
+            }
+
+            #navbar {
+                width: 100%;
+                background-color: #4484CE;
+                overflow: auto;
+                margin-bottom: 70px;
+            }
+
+            #navbar a {
+                color: white;
+                font-size: 13px;
+                float: left;
+                margin-top: 20px;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                padding-left: 67.5px;
+                padding-right: 40px;
+                text-decoration: none;
+                font-family: open-sans, sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            #navbar a:hover {
+                color: lightgray;
+            }
+
+            a {
+                display: block;
+                color: red;
+            }
+
+            #pageWrapper {
+                clear: left;
+            }
+
+            #Goal4 img {
+                margin-left: 860px;
+                margin-top: -190px;
+                border-radius: 20%;
+            }
+
+            #Goal5 img {
+                margin-left: 1150px;
+                margin-top: -190px;
+                border-radius: 20%;
+            }
+
+            #game {
+                color: black;
+                font-family: open-sans, sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                text-align: center;
+            }
+
+            #game button {
+                border-radius: 40%;
+                border: none;
+                background-color: lightgrey;
+                width: 8%;
+                height: 5%;
+                color: black;
+                font-family: open-sans, sans-serif;
+            }
+
+            #container {
+                text-align: center;
+                font-family: open-sans, sans-serif;
+            }
+
+            #btn {
+                border-radius: 40%;
+                border: none;
+                background-color: lightgrey;
+                width: 10%;
+                height: 8%;
+                color: black;
+                font-family: open-sans, sans-serif;
+                margin-top: 5px;
+                margin-bottom: 15px;
+            }
+
+            #funfacttext {
+                color: black;
+                font-family: open-sans, sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <div id="navbar">
+                <a href="finalWebsite.html"><i class="fa fa-fw fa-home"></i>Home</a>
+                <a href="genderparity.html"><i class="fa fa-fw fa-home"></i>Gender Parity</a>
+                <a href="qualityofeducation.html"><i class="fa fa-fw fa-database"></i>Quality of Education</a>
+                <a href="schooleffect.html"><i class="fa fa-fw fa-graduation-cap"></i>How School Affects Youth</a>
+                <a href="whykidsareoutofschool.html"><i class="fa fa-fw fa-group"></i>Why are kids out of school?</a>
+                <a href="about.html"><i class="fa fa-fw fa-group"></i>About</a>
+                <a href="resources.html"><i class="fa fa-fw fa-group"></i>Resources</a>
+            </div>
+
+            <div id="titletext1">
+                <p1>Education and</p1>
+            </div>
+            <div id="titletext2">
+                <p1>Gender Equality</p1>
+            </div>
+
+            <div id="Goal4">
+                <a href="https://sdgs.un.org/goals/goal4" target="_blank"><img src="Goal4.png" width=10%></a>
+            </div>
+
+            <div id="Goal5">
+                <a href="https://sdgs.un.org/goals/goal5" target="_blank"><img src="Goal5.png" width=10%></a>
+            </div>
+
+            <div id="girlatschool">
+                <img src="girlAtSchool.png" width=45%>
+            </div>
+
+            <div id="boyatschool">
+                <img src="boyAtSchool.png" width=30%>
+            </div>
+            
+            <a id="game">
+                <div class="game"> <h2>The Game!</h2> <h3>Challenge yourself with this fun interactive game! It only takes about a minute and you can learn a lot!</h3></div>
+                <div class="gamebutton"> <button onclick="game()">Click Me to Play!</button></div>
+            </a>
+
+            <div id="funfacttext">
+                <h2>Fun Fact Generator</h2>
+            </div>
+
+            <div id="container">
+                <button id="btn">Press for a Fun Fact!</button>
+                <div id="output">Fun Fact will show here</div>
+            </div>
+
+        <script>
+            function game() {
+                var questions = [
+                    {
+                        prompt: "What percentage of countries have achieved Gender Parity?\n(a) 74%\n\(b) 49%\n(c) 29%\nAnswer a, b, or c",
+                        answer: "b"
+                    },
+                    {
+                        prompt: "How many girls are out of school worldwide?\n(a) 138 million kids\n\(b) 200 million kids\n(c) 70 million kids\nAnswer a, b, or c",
+                        answer: "a"
+                    },
+                    {
+                        prompt: "How many kids are out of school worldwide?\n(a) 125 million kids\n\(b) 40 million kids\n(c) 258 million kids\nAnswer a, b, or c",
+                        answer: "c"
+                    },
+                    {
+                        prompt: "How many kids are illiterate in low and middle-income countries?\n(a) 53%\n\(b) 23%\n(c) 82%\nAnswer a, b, or c",
+                        answer: "a"
+                    },
+                    {
+                        prompt: "How many kids in America are unable to achieve minimum proficiency levels in reading and mathematics?\n(a) 60%\n\(b) 23%\n(c) 78%\nAnswer a, b, or c",
+                        answer: "a"
+                    },
+                    {
+                        prompt: "Is Education a right?\n(a) Yes\n\(b) No\nAnswer a, b, or c",
+                        answer: "a"
+                    },
+                    {
+                        prompt: "What UNSDGs does this site focus on?\n(a) #4 and #5\n\(b) #2 and #9\n(c) #8 and #14\nAnswer a, b, or c",
+                        answer: "a"
+                    },
+                ];
+                
+                var score = 0;
+                
+                for(var i = 0; i < questions.length; i++){
+                    var response = window.prompt(questions[i].prompt);
+                    if(response == questions[i].answer){
+                        score++;
+                        alert("Correct!");
+                    } else {
+                        alert("Incorrect");
+                    }
+                }
+                
+                
+                alert("you got " + score + "/" + questions.length);
+                }
+
+                let btn = document.getElementById('btn');
+                let output = document.getElementById('output');
+
+                let quotes = 
+                    [
+                        'Only 49 per cent of countries have achieved gender parity in primary education.',
+                        'Women make up more than two-thirds of the worlds 796 million illiterate people.',
+                        'According to global statistics, just 39 percent of rural girls attend secondary school',
+                        'Every additional year of primary school increases girls eventual wages by 10-20 percent. It also encourages them to marry later and have fewer children, and leaves them less vulnerable to violence.',
+                        'While progress has been made in reducing the gender gap in urban primary school enrolment, data from 42 countries shows that rural girls are twice as likely as urban girls to be out of school.',
+                        'In Pakistan a half-kilometre increase in the distance to school will decrease girls enrolment by 20 percent. In Egypt, Indonesia and several African countries, building local schools in rural communities increased girls enrolment.',
+                        'In Cambodia, 48 percent of rural women are illiterate compared to 14 percent of rural men.',
+                        'Data from 68 countries indicates that a womans education is a key factor in determining a childs survival.',
+                        'Children of mothers with no education in the Latin American and Caribbean region are 3.1 times more likely to die than those with mothers who have secondary or tertiary education, and 1.6 more likely to die that those whose mothers have primary-level education.',
+                        'According to UNESCO, there are an estimated 130 million girls between the ages of 6 and 17 out of school.',
+                        'In the Central African Republic, there is only one teacher for every 80 students.',
+                        'In Niger, just 17% of women aged 15 to 24 are literate.',
+                    ];
+
+                btn.addEventListener('click', function (){
+                    var randomQuote = quotes[Math.floor(Math.random() * quotes.length)]
+                    output.innerHTML = randomQuote;
+                })
+
+        </script>
+    </body>
+</html>

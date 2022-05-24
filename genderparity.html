@@ -1,0 +1,167 @@
+<html>
+    <head>
+        <title>Gender Parity</title>
+        <link rel="stylesheet" href="https://use.typekit.net/tiv1dpi.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+        <link rel="icon" type="image/x-icon" href="logo.png">
+
+        <style>
+
+        
+
+        body {
+            background-color: #4484CE;
+        }
+        
+        #pieCharts {
+                width:100%;
+        }
+        #placeHolder {
+            font-family: open-sans, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        #navbar {
+                width: 100%;
+                background-color: #4484CE;
+                overflow: auto;
+                margin-bottom: 30px;
+            }
+
+            #navbar a {
+                color: white;
+                font-size: 13px;
+                float: left;
+                margin-top: 22.5px;
+                padding-top: 0px;
+                padding-bottom: 12px;
+                padding-left: 67.5px;
+                padding-right: 40px;
+                margin-left: -10px;
+                text-decoration: none;
+                font-family: open-sans, sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            #navbar a:hover {
+                color: lightgray;
+            }
+
+            #charttitleone {
+                font-family: open-sans, sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                margin-left: 67.5px;
+                color: white;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="navbar">
+            <a href="finalWebsite.html"><i class="fa fa-fw fa-home"></i>Home</a>
+            <a href="genderparity.html"><i class="fa fa-fw fa-home"></i>Gender Parity</a>
+            <a href="qualityofeducation.html"><i class="fa fa-fw fa-database"></i>Quality of Education</a>
+            <a href="schooleffect.html"><i class="fa fa-fw fa-graduation-cap"></i>How School Affects Youth</a>
+            <a href="whykidsareoutofschool.html"><i class="fa fa-fw fa-group"></i>Why are kids out of school?</a>
+            <a href="about.html"><i class="fa fa-fw fa-group"></i>About</a>
+            <a href="resources.html"><i class="fa fa-fw fa-group"></i>Resources</a>
+        </div>
+
+        <div id="charttitleone"><h1>Men vs Women who graduated College</h1></div>
+        <table id="pieCharts">
+            <tr>
+                <td width="50%"><canvas id="chart1"></canvas></td>
+                <td width="50%"><canvas id="chart2"></canvas></td>
+            </tr>
+        </table>
+
+        <table id="pieCharts">
+            <tr>
+                <td width="50%"><canvas id="chart1"></canvas></td>
+                <td width="50%"><canvas id="chart2"></canvas></td>
+            </tr>
+        </table>
+
+        <script type="text/javascript">
+            xValues = ["Men", "Women"];
+            yValuesMale = [58,42];
+            yValuesFemale = [44,56];
+            sliceColoursMale = ["blue","green"];
+            sliceColoursFemale = ["blue","green"];
+            
+
+            new Chart("chart1", 
+            {
+                type: "pie",
+                data: 
+                {
+                    labels: xValues,
+                    datasets: 
+                    [{
+                        backgroundColor: sliceColoursMale,
+                        data: yValuesMale
+                    }]
+                },
+                options: 
+                {
+                    plugins:
+                    {
+                        title: 
+                        {
+                            display: true,
+                            text: "1970s",
+                            color: "white"
+                        },
+                        legend:
+                        {
+                            labels: 
+                            {
+                                color: "white"
+                            }
+                        }
+                    }
+                }
+            });
+            new Chart("chart2", 
+            {
+                type: "pie",
+                data: 
+                {
+                    labels: xValues,
+                    datasets: 
+                    [{
+                        backgroundColor: sliceColoursFemale,
+                        data: yValuesFemale,
+                        borderColor: "white"
+                    }]
+                },
+                options: 
+                {
+                    legend: 
+                    {
+                        display: true,
+                        position: "top"
+                    },                    
+                    plugins:
+                    {
+                        title: 
+                        {
+                            display: true,
+                            text: "Now",
+                            color: "white"
+                        },
+                        legend:
+                        {
+                            labels: 
+                            {
+                                color: "white"
+                            }
+                        }
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>
